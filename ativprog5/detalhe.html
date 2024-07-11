@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> currículo de alan patrick</title>
+  <script>
+
+    function toggleVisibility(event) {
+        const target = event.target;
+        const topic = target.closest('.topic');
+        const text = topic.querySelector('p, li, ol, ul, img, a');
+
+
+        if (event.type === 'click') {
+            text.style.display = 'none';
+        } else if (event.type === 'dblclick') {
+            text.style.display = 'block';
+        }
+    }
+
+    function swapImage() {
+      const image = document.getElementById('i');
+      if (image.src.includes('11.jpg')) {
+          image.src = '1.jpeg';
+      } else {
+          image.src = '11.jpg';
+      }
+  }
+</script>
+    <body>
+    
+    <main>
+  <img id="i" src= "11.jpg " alt="imagem" width="120" height="120" onclick="swapImage()">
+  <link rel="stylesheet" href="styles.css">
+  <h1> ALAN PATRICK </h1>
+  <section class="topic" onclick="toggleVisibility(event)" ondblclick="toggleVisibility(event)">
+  <h2>Perfil </h2>
+  <p>Atualmente estou atuando na programação java, mas já tive experiência, com diversas linguagens como python, C++, bem como back e front end. Já trabalhei com mais frequência nessas linguagem, mas também já usei outras, contudo me sinto seguro para atuar com estas para que assim eu seja melhor aproveitado.</P>
+  </section>
+
+  <section class="topic" onclick="toggleVisibility(event)" ondblclick="toggleVisibility(event)">
+  <h2> MICROSOFT OFFICE (de 15 de janeiro de 2016 a 31 de março de 2018)</h2>
+  <ol>
+    <h3> desenvolvedor estagiário </h3>
+  <ol><li> Participação em desenvolvimento programas, e resolução de problema utilizando o java </li>
+  <li> Gestão de dados, ampliação e desenvolvimento de banco de dados para implementação do programa da empresa </li>
+</ol>
+  </section>
+  <section class="topic" onclick="toggleVisibility(event)" ondblclick="toggleVisibility(event)">
+  <h2> GOOGLE (1 de abril de 2018 a 8  agosto de 2020)</h2>
+  <ol>
+  <h3> desenvolvedor junior </h3>
+  <ol><li> desenvolvedor python, trabalhou com resoluções de problemas e chifiou grupo de programadores </li>
+  <li> desenvolvedor web frot-end com criação de site e suporte tecnico aos site da enpresa  </li>
+  <li> desenvolvedor web back-end, como chefe de departamento de programadores de banco de dados dos sites</li>
+</ol>
+</section>
+ <a href="index.html">pagina inicial</a>
+ 
+</main>
+ </body>
+ </html>

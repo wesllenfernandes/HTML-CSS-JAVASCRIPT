@@ -1,0 +1,39 @@
+/* estilizando todos os paragrafos */
+body {
+  color: #444;
+  line-height: 1.5;
+  background-color: #ddd;
+  border: white;
+  padding: 20px;
+  width: 60%;
+  margin: 0 auto;
+  font-family:"Helvetica neue";
+}
+
+h2, h1 {
+  color: rgb(140, 76, 8);
+  user-select: none;
+}
+
+
+
+section {
+  border-style: solid;
+  border-bottom-width: 0;
+  border-top-width: 2px;
+  border-right-width: 0;
+  border-left-width: 0;
+  border-top-color: #ddd;
+}
+
+main {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  margin:  auto;
+  padding: 30px;
+}
+
+button {
+background-color: #ddd;
+border: white
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>currículo de alan patrick</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+
+    function toggleVisibility(event) {
+        const target = event.target;
+        const topic = target.closest('.topic');
+        const text = topic.querySelector('p, li, ol, ul, img, a');
+
+
+        if (event.type === 'click') {
+            text.style.display = 'none';
+        } else if (event.type === 'dblclick') {
+            text.style.display = 'block';
+        }
+    }
+
+    function swapImage() {
+      const image = document.getElementById('i');
+      if (image.src.includes('11.jpg')) {
+          image.src = '1.jpeg';
+      } else {
+          image.src = '11.jpg';
+      }
+  }
+</script>
+
+  </head>
+  <body>
+    <main>
+    <img id="i" src="11.jpg" alt="imagem" width="120" height="120"  onclick="swapImage()">
+    <h1> ALAN PATRICK</h1>
+
+    <section class="topic" onclick="toggleVisibility(event)" ondblclick="toggleVisibility(event)"><h2>PERFIL</h2>
+    
+    <p> Desde de criança sempre fui "curioso" quanto a tecnologia, sempre fusei, e
+      busquei aprender ao máximo, tinha bastante curiosidade, foi uma paixão que
+      poucos foi de fato descobrindo, aos 15 anos fiz um curso técnico de
+      informática onde tive primeiro contato com um pouco de programação que
+      logo chamou minha atenção. Depois do curso técnico tive um caminho a seguir e dali em diante busquei
+      curso superior na área, pois tinha descoberto minha vocação, entrei no
+      curso de graduação de TI consegui me informar e realizar o meu sonho de se
+      tornar programador
+    </p>
+    </section>
+
+    <section class="topic" onclick="toggleVisibility(event)" ondblclick="toggleVisibility(event)"><h2>Principais competências</h2>
+    <ol>
+      <li>linguagem C</li>
+      <li>linguagem C++</li>
+      <li>linguagem java</li>
+      <li>linguagem python</li>
+    </ol>
+    </section>
+    <section class="topic" onclick="toggleVisibility(event)" ondblclick="toggleVisibility(event)">
+    <h2>Formação acadêmica</h2>
+    <p>
+      guaduado em tecnologia da informação na universidade federal do rio grande
+      do norte<a href="https://www.ufrn.br/">(UFRN)</a> em 2014 e mestrando em
+      tecnologia da informação na universidade federal do seminário
+      <a href="https://ufersa.edu.br/">(Ufersa)</a> em 2015.
+    </p>
+  </section>
+
+  <section class="topic" onclick="toggleVisibility(event)" ondblclick="toggleVisibility(event)">
+    <h2>Esperiencias profissionais</h2>
+
+      <ul>
+        <li>
+          Microsoft office 2016-2018:
+          <ul>
+      <li>Desenvolver Java</li>
+      <li>banco de dados</li>
+    </ul>
+    </li>
+    <li>
+      google 2018-2020
+    <ul>
+  
+      <li>linguagem python</li>
+      <li>desenvolvedor front-end</li>
+      <li>desenvolvedor back-end</li>
+    </ul>
+    </li>
+    </ul>
+
+    <a href="detalhe.html"> veja as experiencias em detalhes</a>
+    </section>
+    <section class="topic" onclick="toggleVisibility(event)" ondblclick="toggleVisibility(event)">
+    <h2>Contato</h2>
+    <ul>
+    <li>
+      <img src="12.jpg" alt="fone" width="30" height="30"> Av joão cordero
+      filho
+    </li>
+    <li>
+      <img src="13.jpg" alt="fone" width="30" height="30" >
+      <a href="tel+558499887766">99887766</a>
+    </li>
+    <li>
+      <img src="14.jpg" alt="fone" width="30" height="30">
+      <a href="email:alanpatrick@gmail.com">alanpatrick@gmail.com</a>
+    </li>
+  </ul>
+  </section>
+    </main>
+  </body>
+</html>
